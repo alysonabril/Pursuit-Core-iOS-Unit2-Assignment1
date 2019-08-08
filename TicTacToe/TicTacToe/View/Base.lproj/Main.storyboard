@@ -24,7 +24,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNU-eh-Gad">
                                 <rect key="frame" x="106" y="109" width="202" height="76"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="47"/>
-                                <color key="textColor" red="0.52763294169537689" green="0.35859559688704945" blue="0.61573579401725897" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.58703820896302306" green="0.026745907921092538" blue="0.76132217639593902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rs8-fB-3fN">
@@ -124,6 +124,9 @@
                                 <rect key="frame" x="20" y="703" width="374" height="62"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="31"/>
                                 <state key="normal" title="*~ New Game ~*"/>
+                                <connections>
+                                    <action selector="newGameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="crD-u9-zeH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9g7-3q-9Qo" userLabel="5">
                                 <rect key="frame" x="160.5" y="347" width="93" height="93"/>
@@ -207,6 +210,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="newGameButton" destination="TB6-iD-mDw" id="5PW-yU-ILq"/>
                         <outlet property="playerTurnLabel" destination="rs8-fB-3fN" id="2qY-ok-HeB"/>
                     </connections>
                 </viewController>
