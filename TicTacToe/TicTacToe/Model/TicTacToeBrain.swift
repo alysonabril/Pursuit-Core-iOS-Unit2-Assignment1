@@ -9,5 +9,16 @@
 import Foundation
 
 class TicTacToeBrain {
-  
+    
+    enum Player {
+        case one
+        case two
+        mutating func toggle() {
+            switch self {
+            case .one: self = .two
+            case .two: self = .one
+            }
+        }
+    }
+    
 }

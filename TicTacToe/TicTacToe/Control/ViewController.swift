@@ -10,11 +10,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+//    var player1 = true
+//    var player2 = false
+    
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
   }
 
 
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        //test to see if all buttons are attached
+        sender.setTitle("X", for: .normal)
+    }
+    
+    
 }
 
