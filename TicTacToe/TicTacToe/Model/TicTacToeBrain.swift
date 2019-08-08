@@ -13,12 +13,23 @@ class TicTacToeBrain {
     enum Player {
         case one
         case two
+        
         mutating func toggle() {
+            
             switch self {
-            case .one: self = .two
-            case .two: self = .one
+            case .one:
+                self = .two
+            case .two:
+                self = .one
             }
         }
     }
     
+    func updatePlayerTurn()  {
+        playerTurn.toggle()
+//        return playerTurn
+    }
+    
+    
+      var playerTurn = Player.one
 }
