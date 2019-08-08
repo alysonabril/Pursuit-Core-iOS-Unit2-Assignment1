@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var brain = TicTacToeBrain()
+    var gameActive = true
     
     
     @IBOutlet weak var playerTurnLabel: UILabel!
@@ -47,7 +48,10 @@ class ViewController: UIViewController {
         for num in 1...9 {
             let button = view.viewWithTag(num) as! UIButton
             button.setTitle("", for: .normal)
+            button.isEnabled = true
+            brain.playerTurn = .one
         }
+        gameActive = true
     }
     
     func updateTurn(title: String, text: String, color: UIColor, button: UIButton) {
@@ -56,7 +60,6 @@ class ViewController: UIViewController {
         playerTurnLabel.text = text
         playerTurnLabel.isHidden = false
         button.isEnabled = false
-        
     }
 }
 
